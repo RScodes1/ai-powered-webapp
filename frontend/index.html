@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Poem Generator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Poem Generator</h1>
+        <div class="form-group">
+            <label for="title">Title:</label>
+            <input type="text" id="title" class="input-field" required>
+        </div>
+        <div class="form-group">
+            <label for="theme">Theme:</label>
+            <select id="theme" class="input-field" required>
+                <option value="">Select Theme</option>
+                <option value="Nature">Nature</option>
+                <option value="Love">Love</option>
+                <option value="Sadness">Sadness</option>
+                <option value="Friendship">Friendship</option>
+                <option value="Hope">Hope</option>
+                <option value="Adventure">Adventure</option>
+                <option value="Mystery">Mystery</option>
+                <option value="Dreams">Dreams</option>
+                <option value="Courage">Courage</option>
+                <option value="Imagination">Imagination</option>
+                <option value="Memories">Memories</option>
+                <!-- Add more options as needed -->
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="mood">Mood:</label>
+            <select id="mood" class="input-field" required>
+                <option value="">Select Mood</option>
+                <option value="Serene">Serene</option>
+                <option value="Joyful">Joyful</option>
+                <option value="Melancholic">Melancholic</option>
+                <option value="Reflective">Reflective</option>
+                <option value="Whimsical">Whimsical</option>
+                <option value="Euphoric">Euphoric</option>
+                <option value="Anguished">Anguished</option>
+                <option value="Nostalgic">Nostalgic</option>
+                <option value="Grateful">Grateful</option>
+                <option value="Confused">Confused</option>
+                <option value="Enigmatic">Enigmatic</option>
+                <!-- Add more options as needed -->
+            </select>
+        </div>
+        <button id="generate-btn">Generate Poem</button>
+        <div id="poem-container" class="poem-container"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
